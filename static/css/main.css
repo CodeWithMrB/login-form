@@ -1,0 +1,104 @@
+@font-face {
+    font-family: yekan;
+    src: url("font/B_Yekan/Yekan.ttf");
+}
+
+
+body, input, button {
+    font-family: yekan, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.img-bg {
+    position: fixed;
+    top: 0;
+    right: 50%;
+    width: auto;
+    height: 100%;
+    z-index: -1 !important;
+    transform: translate(50%, 0);
+}
+.container {
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(7px);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .form {
+    display: block;
+    width: 360px;
+    height: auto;
+}
+.container .form .mb {
+    margin-bottom: 25px !important;
+}
+.container .form .title {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container .form .username-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.container .form .username {
+    all: unset;
+    width: 340px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    margin-bottom: 5px;
+}
+.container .form .username-alert {
+    padding: 0;
+    margin: 0;
+}
+.container .form .password-label {
+    display: block;
+    margin-bottom: 5px;
+}
+.container .form .password {
+    all: unset;
+    width: 340px;
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #2c2c2c;
+    margin-bottom: 5px;
+}
+.container .form .password-alert {
+    padding: 0;
+    margin: 0;
+}
+.container .form .btn-form {
+    all: unset;
+    background-color: white;
+    border: 1px solid #2c2c2c;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+@media (min-width: 1107px) {
+    .img-bg {
+        position: fixed;
+        top: 50%;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: -1 !important;
+        transform: translate(0, -50%);
+    }
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+    <head>
+
+        <meta charset="UTF-8">
+        <title>login form</title>
+        <link rel="stylesheet" href="static/css/main.css">
+
+    </head>
+    <body>
+
+        <img src="static/img/space.jpg" alt="" class="img-bg">
+        <div class="container">
+            <form action="" class="form" id="form" name="form" onsubmit="return checkPoint()">
+                <h2 class="title mb">وارد شوید</h2>
+                <div class="mb">
+                    <label for="username" class="username-label">نام کاربری :</label>
+                    <input type="text" name="username" id="username" class="username" placeholder="ایمیل خود را وارد کنید." oninput="userCheck()">
+                    <p class="username-alert" id="usernameAlert"></p>
+                </div>
+                <div class="mb">
+                    <label for="password" class="password-label">گذرواژه :</label>
+                    <input type="password" name="password" id="password" class="password" placeholder="پسورد خود را وارد کنید." oninput="passCheck()">
+                    <p class="password-alert" id="passwordAlert"></p>
+                </div>
+                <button class="btn-form" type="submit">ورود</button>
+            </form>
+        </div>
+
+        <script src="static/js/main.js"></script>
+
+    </body>
+</html>
